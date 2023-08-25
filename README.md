@@ -9,7 +9,7 @@ It currently lets users:
 🔢 250 character limit on messages
 I gained valuable backend development experience building this from scratch and implementing core chat functionality like:
 #nodejs #restapi #expressjs #databases #socketio
-Database management
+Database managements
 User authentication
 Web sockets for real-time communication
 Performance optimization
