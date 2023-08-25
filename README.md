@@ -1,55 +1,65 @@
-Real-Time Web Chat Application
-Welcome to the README documentation for the Real-Time Web Chat Application! This application provides users with the ability to sign up, log in, edit their account details, and engage in real-time chat conversations with other users. Below, you'll find essential information about the current features, technologies used, and future enhancements planned for the application.
+# Node.js Login Chat App
 
-Features
-The Real-Time Web Chat Application comes with a range of features to facilitate seamless communication and interaction:
+<strong>THIS IS A WORK IN PROGRESS, FEATURES MAY BE MISSING.</strong>
 
-Sign Up and Log In: New users can easily sign up with the application and existing users can securely log in.
+## What is this project?
 
-Secure Login: User passwords are securely hashed using bcrypt, ensuring the protection of user data.
+A chatroom website written in Node.js using Socket.IO for communication between clients. Express.js and the Node.js implementation of SQLite are used for a login system allowing users to register, login, edit, and delete an account at any time. Passwords are hashed using bcrypt so they are stored securely in the database. 
 
-Edit Account Details: Users have the flexibility to edit their account information, allowing them to keep their profiles up-to-date.
+## Features
 
-Delete Account: Users can choose to delete their accounts, providing a way to manage their presence on the platform.
+🟢 = Fully working | 🟡 = Partly working/in progress | 🟠 = To be added | 🔴 = Broken
 
-Real-Time Chat: The application leverages the power of Socket.IO to enable real-time chat functionality, making conversations smooth and dynamic.
+* Database 🟢
+* Sign Up 🟢
+* Sign In 🟢
+* Session management system 🟢
+* Homepage 🟢
+* Edit account 🟢
+* Delete account 🟢
+* Remember me 🟢
+* Two-step verification 🟠
+* Mobile support 🟢
+* List of connected users 🟢
+* Message displayed on joining/leaving chat 🟢
+* Sending and receiving messages 🟢
+* Previous chat history displayed on joining 🟢
+* 250 character limit on messages 🟢
+* Administrator accounts with ban and delete powers 🟠
+* Different chatrooms 🟠
+* Changing username updates it in chat logs 🟠
+* Deleting account updates it to "DELETED" in chat logs 🟠
+* Session renewal on a regular basis 🟠
 
-Chat History: Users can view their previous chat history, allowing them to catch up on conversations.
+## Installation instructions
 
-Message Character Limit: To encourage concise communication, there's a 250-character limit on messages.
+### Dependencies
 
-Core Development Experience
-During the development of this application, I gained valuable experience in various aspects of backend development. Some of the key areas I focused on include:
+* Node.js v17 or newer
+* NPM package manager
+* Git
 
-Node.js: The application is built using Node.js, providing a robust and scalable runtime environment.
+### Terminal/command prompt
 
-REST API: I implemented a RESTful API using Express.js to handle user authentication, account management, and other interactions.
+```
+git clone https://github.com/chasc0des/nodejs-login-chat-app.git
+cd nodejs-login-chat-app
+npm install .
+npm start
+```
 
-Database Management: The application utilizes databases to store user information and chat history, enhancing data organization.
+By default, the program can be accessed on ``http://localhost:8080`` or from another machine on your network, ``http://<YOUR IP ADDRESS>:8080``.
 
-Socket.IO: Web sockets powered by Socket.IO enable real-time communication, creating a dynamic chat experience.
+## Screenshots
 
-Performance Optimization: I prioritized performance optimization to ensure the application runs smoothly and efficiently.
+<img src="screenshots/sign-in.png" alt="Sign In form" style="width: 100%">
 
-Planned Enhancements
-In the future, I intend to expand the capabilities of the Real-Time Web Chat Application with the following features:
+<img src="screenshots/sign-up.png" alt="Sign Up form" style="width: 100%">
 
-Administrator Accounts: Implementation of administrator accounts to manage user interactions and ensure a safe environment.
+<img src="screenshots/home.png" alt="Homepage" style="width: 100%">
 
-Multiple Chatrooms: Adding support for multiple chatrooms to facilitate discussions on various topics.
+<img src="screenshots/edit.png" alt="Edit account page" style="width: 100%">
 
-Username Updates in Logs: Updating usernames in chat logs to maintain accurate records of conversations.
+<img src="screenshots/delete.png" alt="Delete account page" style="width: 100%">
 
-Account Deletion in Logs: Ensuring that deleted accounts are properly reflected in chat logs.
-
-Session Renewal: Implementing session renewal mechanisms for enhanced security and user convenience.
-
-Get Started
-To set up and run the Real-Time Web Chat Application, follow these steps:
-
-Clone the repository to your local machine.
-Install the necessary dependencies using your preferred package manager.
-Configure the database settings and environment variables.
-Run the application using the provided command.
-Access the application through your preferred web browser.
-Feel free to explore the codebase, experiment with new features, and contribute to the project's growth!
+<img src="screenshots/404.png" alt="Error 404 not found" style="width: 100%">
